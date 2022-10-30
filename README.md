@@ -9,6 +9,7 @@ Implementation of various algorithms and DS in C#
 ### [Sorts](./Sorting)
 - [Bubble Sort (Iterative & Recursive)](./Sorting/BubbleSort.cs)
 - [Selection Sort (Iterative & Recursive)](./Sorting/SelectionSort.cs)
+- [Merge Sort (Iterative & Recursive)](./Sorting/MergeSort.cs)
 
 ## License
 
