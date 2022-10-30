@@ -1,3 +1,5 @@
+![Build Status](https://github.com/osamashabrez/algorithms/actions/workflows/dotnet.yml/badge.svg)
+
 # Algorithms
 
 Implementation of various algorithms and DS in C#
