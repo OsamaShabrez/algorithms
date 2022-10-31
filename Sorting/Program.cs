@@ -21,7 +21,7 @@ void PrintArray(IEnumerable<int> array)
 int[] array = { 800, 11, 50, 771, 649, 770, 240, 9, 15, 7, 999, 72, 37 };
 
 PrintArray(array);
-var result = MergeSort.Iterative(ArrayCopy(array));
+var result = QuickSort.Iterative(ArrayCopy(array));
 PrintArray(result);
-result = MergeSort.Recursive(ArrayCopy(array));
+result = QuickSort.Recursive(ArrayCopy(array));
 PrintArray(result);
