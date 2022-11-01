@@ -15,49 +15,68 @@ public class UnitTestSorting
     private readonly int[] _t3 = { 10, 8, 7, 3, 5, 1, 9, 2, 4, 6 };
     private readonly int[] _r3 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-    private static int[] ArrayCopy(int[] array)
-    {
-        var newArray = new int[array.Length];
-        Array.Copy(array, 0, newArray, 0, array.Length);
-        return newArray;
-    }
-
     [Fact]
     public void TestBubbleSort()
     {
-        var result = BubbleSort.Iterative(ArrayCopy(_t1));
+        var result = BubbleSort.Iterative(_t1);
         CollectionAssert.AreEqual(_r1, result);
 
-        result = BubbleSort.Recursive(ArrayCopy(_t2));
+        result = BubbleSort.Recursive(_t2);
         CollectionAssert.AreEqual(_r2, result);
 
-        result = BubbleSort.Recursive(ArrayCopy(_t3));
+        result = BubbleSort.Recursive(_t3);
         CollectionAssert.AreEqual(_r3, result);
     }
     
     [Fact]
     public void TestMergeSort()
     {
-        var result = MergeSort.Iterative(ArrayCopy(_t1));
+        var result = MergeSort.Iterative(_t1);
         CollectionAssert.AreEqual(_r1, result);
 
-        result = MergeSort.Recursive(ArrayCopy(_t2));
+        result = MergeSort.Recursive(_t2);
         CollectionAssert.AreEqual(_r2, result);
 
-        result = MergeSort.Recursive(ArrayCopy(_t3));
+        result = MergeSort.Recursive(_t3);
+        CollectionAssert.AreEqual(_r3, result);
+    }
+
+    [Fact]
+    public void TestRadixSort()
+    {
+        var result = RadixSort.Iterative(_t1);
+        CollectionAssert.AreEqual(_r1, result);
+
+        result = RadixSort.Recursive(_t2);
+        CollectionAssert.AreEqual(_r2, result);
+
+        result = RadixSort.Recursive(_t3);
+        CollectionAssert.AreEqual(_r3, result);
+    }
+
+    [Fact]
+    public void TestQuickSort()
+    {
+        var result = QuickSort.Iterative(_t1);
+        CollectionAssert.AreEqual(_r1, result);
+
+        result = QuickSort.Recursive(_t2);
+        CollectionAssert.AreEqual(_r2, result);
+
+        result = QuickSort.Recursive(_t3);
         CollectionAssert.AreEqual(_r3, result);
     }
 
     [Fact]
     public void TestSelectionSort()
     {
-        var result = SelectionSort.Iterative(ArrayCopy(_t1));
+        var result = SelectionSort.Iterative(_t1);
         CollectionAssert.AreEqual(_r1, result);
 
-        result = SelectionSort.Recursive(ArrayCopy(_t2));
+        result = SelectionSort.Recursive(_t2);
         CollectionAssert.AreEqual(_r2, result);
 
-        result = SelectionSort.Recursive(ArrayCopy(_t3));
+        result = SelectionSort.Recursive(_t3);
         CollectionAssert.AreEqual(_r3, result);
     }
 }
