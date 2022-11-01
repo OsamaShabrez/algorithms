@@ -7,7 +7,51 @@ public static class QuickSort
     // Space complexity O(logN)
     public static int[] Iterative(int[] array)
     {
-        return Array.Empty<int>();
+        var left = 0;
+        var right = array.Length - 1;
+        var top = -1;
+        var stack = new int[array.Length];
+
+        stack[++top] = left;
+        stack[++top] = right;
+
+        while (top >= 0)
+        {
+            right = stack[top--];
+            left = stack[top--];
+
+            var p = PartitionIterative(array, left, right);
+            if (p - 1 > left)
+            {
+                stack[++top] = left;
+                stack[++top] = p - 1;
+            }
+
+            if (p + 1 < right)
+            {
+                stack[++top] = p + 1;
+                stack[++top] = right;
+            }
+        }
+
+        return array;
+    }
+
+    private static int PartitionIterative(int[] array, int left, int right)
+    {
+        var x = array[right];
+        var y = left - 1;
+
+        for (var i = left; i <= right - 1; ++i)
+        {
+            if (array[i] > x) continue;
+            
+            ++y;
+            (array[y], array[i]) = (array[i], array[y]);
+        }
+        (array[y + 1], array[right]) = (array[right], array[y + 1]);
+
+        return y + 1;
     }
 
     public static int[] Recursive(int[] array)
@@ -31,7 +75,7 @@ public static class QuickSort
         var pivot = SelectPivot(array, left, right);
         var idxLeft = left;
         var idxRight = right;
-        
+
         while (true)
         {
             while (array[idxLeft] < pivot)
@@ -53,7 +97,7 @@ public static class QuickSort
     private static int SelectPivot(int[] array, int left, int right)
     {
         var a = array[left];
-        var b = array[left + (right - left) / 2]; 
+        var b = array[left + (right - left) / 2];
         var c = array[right];
 
         // selecting pivot taking mean value
