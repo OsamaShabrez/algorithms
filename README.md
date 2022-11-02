@@ -12,6 +12,7 @@ Implementation of various algorithms and DS in C#
 - [Merge Sort (Iterative & Recursive)](./Sorting/MergeSort.cs)
 - [Selection Sort (Iterative & Recursive)](./Sorting/SelectionSort.cs)
 - [Quick Sort (Iterative & Recursive)](./Sorting/QuickSort.cs)
+- [Radix Sort (Iterative & Recursive)](./Sorting/RadixSort.cs)
 
 ## License
 
