@@ -83,4 +83,15 @@ public class UnitTestSorting
         result = SelectionSort.Recursive(input);
         CollectionAssert.AreEqual(output, result);
     }
+
+    [Theory]
+    [MemberData(nameof(Data))]
+    public void TestHeapSort(int[] input, int[] output)
+    {
+        var result = HeapSort.Iterative(input);
+        CollectionAssert.AreEqual(output, result);
+
+        result = HeapSort.Recursive(input);
+        CollectionAssert.AreEqual(output, result);
+    }
 }
