@@ -1,10 +1,10 @@
 namespace algorithms;
 
+// Average case O(N logN)
+// Worst case O(N^2)
+// Space complexity O(logN)
 public static class QuickSort
 {
-    // Average case O(N logN)
-    // Worst case O(N^2)
-    // Space complexity O(logN)
     public static int[] Iterative(int[] array)
     {
         var left = 0;

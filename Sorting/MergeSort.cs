@@ -1,10 +1,10 @@
 namespace algorithms;
 
+// Best case O(N LogN)
+// Worst case O(N logN)
+// Space complexity O(n)
 public static class MergeSort
 {
-    // Best case O(N LogN)
-    // Worst case O(N logN)
-    // Space complexity O(n)
     public static int[] Iterative(int[] array)
     {
         var start = 0;

@@ -1,10 +1,10 @@
 namespace algorithms;
 
+// Best case O(N^2)
+// Worst case O(N^2)
+// Space complexity O(1)
 public static class SelectionSort
 {
-    // Best case O(N^2)
-    // Worst case O(N^2)
-    // Space complexity O(1)
     public static int[] Iterative(int[] array)
     {
         for (var sorted = 0; sorted < array.Length; sorted++)
