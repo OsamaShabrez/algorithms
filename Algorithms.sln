@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{78981359-0D2C-4A12-9BA0-4E4305CB6C49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searching", "Searching\Searching.csproj", "{480B8B9D-6F48-4A1F-A5B2-2AEB3D8E8E40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{78981359-0D2C-4A12-9BA0-4E4305CB6C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78981359-0D2C-4A12-9BA0-4E4305CB6C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78981359-0D2C-4A12-9BA0-4E4305CB6C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{480B8B9D-6F48-4A1F-A5B2-2AEB3D8E8E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480B8B9D-6F48-4A1F-A5B2-2AEB3D8E8E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480B8B9D-6F48-4A1F-A5B2-2AEB3D8E8E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480B8B9D-6F48-4A1F-A5B2-2AEB3D8E8E40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

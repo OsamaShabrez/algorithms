@@ -6,6 +6,10 @@ Implementation of various algorithms and DS in C#
 
 ## Algorithm List
 
+### [Searching](./Searching)
+
+-   [BinarySearch (Iterative & Recursive)](./Searching/BinarySearch.cs)
+
 ### [Sorts](./Sorting)
 
 -   [Bubble Sort (Iterative & Recursive)](./Sorting/BubbleSort.cs)
